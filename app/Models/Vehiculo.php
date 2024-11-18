@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vehiculo extends Model
 {
-    protected $fillable = ['tipo_de_vehiculo', 'categorias'];
+    use HasFactory;
+    protected $fillable = ['tipo_de_vehiculo', 'categoria'];
 
 }
